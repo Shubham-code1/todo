@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>MyTodo App</title>
+  </head>
+  <body>
+<div id="outer">
+  <!--- alert msg starts --->
+
+<div id="alertmain">
+  <div id="alerthead">Alert Message !</div>
+  <div id="alertmsg"></div>
+  <div id="alertmsg">Note:- Description should be min. 50 characters</div>
+  <div id="divbtn">
+          <button id="alertbtn">OK</button>
+  </div>
+</div>
+
+<!--- alert msg ends --->
+
+
+    <div class="main">
+      <div class="head-left">
+        <div class="img-section"><img src="./todologo.png" alt="brk.." /></div>
+        <h1>Todo-Application</h1>
+      </div>
+
+      <div class="head-right">
+        <div class="img-section">
+          <h3>Total Todos : <span id="total"></span></h3>
+        </div>
+
+        <div class="nav">
+          <a class="active">Home</a>
+          <a class="Todo-dropdown" href="" target="_blank">Todos</a>
+          <a class="date-dropdown" title="Click to see Time" href=""
+            >Date
+            <div id="date">Date</div>
+          </a>
+
+          <a class="time-dropdown" href="" title="Click to see Time"
+            >Time
+            <div id="time">Time</div>
+          </a>
+        </div>
+
+        <div class="icon">
+          <div>
+            <a href="https://web.whatsapp.com/" target="_blank"
+              ><img src="./whatsapp.png" alt="...brk"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="./facebook.png" alt="...brk"
+            /></a>
+          </div>
+          <div>
+            <a href=""
+              ><img src="./linkedin.png" target="_blank" alt="...brk"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-left">
+        <form id="form" class="form-position">
+          <div>
+            <label for="title">Title :- <span class="error"></span> </label>
+            <select name="title" id="title">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="" selected>None</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="fullname"
+              >Full Name :- <span class="error"></span
+            ></label>
+            <input type="text" name="fullname" id="fullname" />
+          </div>
+
+          <div>
+            <label for="todo">Description :- <span class="error"></span></label>
+            <textarea
+              name="todo"
+              id="todo"
+              cols="30"
+              rows="4"
+              style="resize: none"
+            ></textarea>
+          </div>
+
+          <div>
+            <label for="targetdate"
+              >Target Date :- <span class="error"></span
+            ></label>
+            <input type="datetime-local" name="targetdate" id="targetdate" />
+          </div>
+
+          <div class="btn">
+            <button type="submit" id="create">Create</button>
+            <button type="reset" id="resets">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- ------------------------------------------------- -->
+
+      <div class="display-right">
+        <!-- In this app below html is being created using Js line no 120 to  202.  -->
+
+        <!-- <div id="output">
+                        <div id="left-zone">
+                            <h3 id="top">Shubham Kumar</h3>
+                            <p id="middle">.</p>
+
+                            <div id="lower">
+                                <h4 id="createdAt">Created at :- <span id="createdate"></span></h4>
+                                <h4 id="targetof">Target :- <span id="myTarget"></span></h4>
+                            </div>
+                        </div>
+
+                        <div id="right-zone">
+                            <button id="delete">Delete</button>
+                            <button id="edit">Edit</button>
+                        </div>
+                </div> -->
+      </div>
+    </div>
+</div>
+    <script></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
